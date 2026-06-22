@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
+import Chatbox from "./components/Chatbox";
+import Credit from "./pages/Credits";
+import Community from "./pages/Community";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='dark:bg-gradient-to-b from-[#242124] to-[#000000] 
+    dark:text-white' >
+        <div className='flex h-screen w screen'>
+          <Sidebar />
+          <Routes>
+            <Route path = '/' element={<Chatbox />}></Route>
+            <Route path='/credits' element={<Credit />}></Route>
+            <Route path='/community' element={<Community />}></Route>
+          </Routes>
+        </div>
     </div>
   );
 }
