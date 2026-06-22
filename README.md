@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# QuickGPT Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+This project is a ChatGPT Clone built using **React** and **Tailwind CSS**. It provides a clean chat interface with support for light and dark themes. Currently, the project uses dummy data for users and chats, and the backend integration will be added later.
 
-In the project directory, you can run:
+## Features Completed
 
-### `npm start`
+DAY : 1
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Created the project using React.
+* Installed and configured Tailwind CSS.
+* Added React Router for page navigation.
+* Created a responsive sidebar.
+* Added a company logo.
+* Added a **New Chat** button.
+* Implemented a search bar to search conversations.
+* Displayed recent chat history using dummy chat data.
+* Displayed the last updated time using Moment.js.
+* Added navigation to:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  * Community Images page
+  * Credits page
+* Displayed the user's available credits.
+* Implemented Dark Mode and Light Mode using React Context API and localStorage.
+* Saved the selected theme so it remains after refreshing the page.
+* Created a global App Context to manage:
 
-### `npm test`
+  * User information
+  * Chat list
+  * Selected chat
+  * Theme
+  * Navigation
+* Created placeholder components:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  * Chatbox
+  * Message
+* Created placeholder pages:
 
-### `npm run build`
+  * Community
+  * Credits
+  * Login
+  * Loading
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* React
+* React Router DOM
+* Tailwind CSS
+* Context API
+* Moment.js
+* JavaScript (ES6)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+```
+src/
+│
+├── components/
+│   ├── Sidebar.jsx
+│   ├── Chatbox.jsx
+│   └── Message.jsx
+│
+├── context/
+│   └── AppContext.jsx
+│
+├── pages/
+│   ├── Community.jsx
+│   ├── Credits.jsx
+│   ├── Login.jsx
+│   └── Loading.jsx
+│
+├── App.jsx
+├── index.js
+└── index.css
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Current Status
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The frontend layout is completed with dummy data. The next step is to connect the application to a backend and AI API for real-time chat functionality.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Future Improvements
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* User authentication
+* Backend integration
+* MongoDB database connection
+* Real AI chat responses
+* Create and delete chats
+* Store chat history
+* Upload and generate images
+* Credit purchase integration
+* Responsive mobile design improvements
